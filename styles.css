@@ -1,0 +1,271 @@
+:root {
+    /* declare color palette as variables */
+    --light-gray: rgb(245, 245, 245);
+    --blueish: rgb(92, 158, 173);
+    --reddish: rgb(191, 33, 30);
+    --orange: rgb(255, 149, 5);
+    --dark-gray: rgb(50, 55, 59);
+}
+
+/*
+html {
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+*/
+
+body {
+    background-color: var(--light-gray);
+}
+
+h1 {
+    font-size: 30px;
+    font-family: "Nunito";
+    font-weight: bold;
+}
+
+h2 {
+    font-size: 24px;
+    font-family: "Nunito";
+    font-weight: bold;
+}
+
+h3 {
+    font-size: 18px;
+    font-family: "Nunito";
+    font-weight: bold;
+}
+
+p {
+    font-family: "Montserrat";
+    font-size: 14px;
+}
+
+
+/* Header ------------------ */
+
+header {
+    background-color: var(--reddish);
+    display: inline-block;
+    padding: 0 auto;
+    width: 100%;
+    position: fixed;
+    opacity: 0.9;
+    z-index: 3;
+}
+
+header h1 {
+    font-size: 30px;
+    color: white;
+    font-family: "Nunito";
+    font-weight: bold;
+    padding: 0.5rem;
+    margin: 0 auto;
+    text-align: center;
+}
+
+
+/* Main -------------- */
+
+/* general */
+main {
+    box-sizing: content-box;
+    padding-top: 46px;
+}
+
+.intro {
+    background-color: var(--blueish);
+}
+
+.intro p {
+    text-align: center;
+    padding: 2em;
+}
+
+.intro a,
+.intro a:visited {
+    color: var(--dark-gray);
+}
+
+.intro a:hover {
+    color: var(--light-gray);
+}
+
+.style-specification {
+    box-sizing: border-box;
+    width: 800px;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+
+.style-specification .design-quality {
+    width: 100%;
+    background-color: white;
+    padding: 20px;
+    margin-bottom: 10px;
+    min-height: 200px;
+    box-sizing: border-box;
+}
+
+.style-specification .design-quality h2{
+    border-bottom: 1px solid var(--dark-gray);
+    color: var(--dark-gray);
+}
+
+/* Colors */
+#colors-content {
+    display: inline-flex;
+    box-sizing: border-box;
+    padding: 15px 0;
+    width: 100%;
+    justify-content: center;
+}
+
+div.color {
+    margin-right: 10px;
+}
+
+
+#light-gray {
+    border-top: 15px solid var(--light-gray);
+}
+
+#dark-gray {
+    border-top: 15px solid var(--dark-gray);
+}
+
+#blueish {
+    border-top: 15px solid var(--blueish);
+}
+
+#reddish {
+    border-top: 15px solid var(--reddish);
+}
+
+#orange {
+    border-top: 15px solid var(--orange);
+    margin-right: 0;
+}
+
+div.color h3 {
+    color: var(--dark-gray);
+    padding: 20px 0;
+    text-align: center;
+}
+
+table {
+    font-family: "Monterrat", sans-serif;
+    font-size: 14px;
+}
+
+td {
+    padding: 2px;
+}
+
+td.color-scheme {
+    color: rgb(141, 141, 141);
+    min-width: 40px;
+    text-align: left;
+}
+
+td.color-value {
+    text-align: right;
+    color: var(--dark-gray);
+    min-width: 90px;
+}
+
+/* Fonts */
+.font-content {
+    padding-top: 15px;
+    display: inline-flex;
+    width: 100%;
+}
+
+.font-content h3 {
+    flex: 1;
+}
+
+.font-samples {
+    float: right;
+    flex: 2;
+    text-align: right;
+}
+
+.font-samples p {
+    line-height: 1.3rem;
+}
+
+#nunito-samples h3,
+#nunito-samples p {
+    font-family: "Nunito", sans-serif;
+}
+
+#montserrat-samples h3,
+#montserrat-samples p {
+    font-family: "Monterrat", sans-serif;
+}
+
+#ubuntu-mono-samples h3,
+#ubuntu-mono-samples p {
+    font-family: "Ubuntu Mono", monospace;
+}
+
+.light {
+    font-weight: lighter;
+}
+
+.regular {
+    font-weight: normal;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.italics {
+    font-weight: normal;
+    font-style: italic;
+}
+
+/* Text style */
+.text-style-sample {
+    padding-top: 20px;
+    line-height: 1.2rem;
+}
+
+#h1-sample {
+    font-size: 30px;
+    font-weight: 600;
+    font-family: "Nunito";
+    margin-bottom: 10px;
+}
+
+#h2-sample {
+    font-size: 24px;
+    font-weight: 600;
+    font-family: "Nunito";
+    margin-bottom: 10px;
+}
+
+#p-sample {
+    font-size: 14px;
+    font-weight: normal;
+    font-family: "Montserrat";
+    margin-bottom: 10px;
+}
+
+ul {
+    text-align: right;
+}
+
+li {
+    font-size: 14px;
+    font-weight: normal;
+    font-family: "Montserrat";
+    margin-bottom: 10px;
+}
+
+/* Footer -------------- */
+
